@@ -6,7 +6,7 @@
 class DaprCli < Formula
   desc "Client for Dapr."
   homepage "https://dapr.io"
-  version '0.7.0'
+  version '0.6.0'
   url "https://github.com/dapr/cli/archive/v0.7.0.tar.gz"
   sha256 "96850bf46a35483416bbb2d96b5cc0bc534986071d90ca759fb76aa30f5846d1"
 
