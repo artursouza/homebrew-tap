@@ -89,6 +89,8 @@ jobs:
           git add .
           # Only commit and push if we have changes
           git diff --quiet && git diff --staged --quiet || (git commit -m "${COMMIT_MSG}"; git push origin master)
+          git tag v${{env.DAPR_CLI_VERSION}}
+          git push origin --tags
   publish:
     name: Publish binaries
     needs: build
